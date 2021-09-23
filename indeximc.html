@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo do IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="imc.js"></script>
+</head>
+<header>
+    <h1>Calculo do IMC</h1>
+</header>
+<body>
+
+    <div id="container">
+        <div class="item">
+            
+            <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+
+                <p> índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+                <p>
+                Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.</p>
+                <div>
+                    <table>
+                        <VEJA id="titletab">VEJA A INTERPRETAÇÃO DO IMC</p>
+                            <tbody>
+                            
+                                <tr>
+                                    <th> IMC</th>
+                                    <th>CLASSIFICAÇÃO  </th>
+                                    <th> OBESIDADE (GRAU)</th>
+                                </tr>
+                                <tr>
+                                    <td>MENOR QUE 18,5</td>
+                                    <td>MAGREZA</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>ENTRE 18,5 E 24,9</td>
+                                    <td>NORMAL</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>ENTRE 25,0 E 29,9</td>
+                                    <td>SOBREPESO</td>
+                                    <td>I</td>
+                                </tr>
+                                <tr>
+                                    <td>ENTRE 30,0 E 39,9</td>
+                                    <td>OBESIDADE</td>
+                                    <td>II</td>
+                                </tr>
+                                <tr>
+                                   <td> MAIOR QUE 40,0</td>
+                                   <td>OBESIDADE GRAVE</td>
+                                   <td>III</td>
+
+                                </tr>
+
+                          
+                            </tbody>
+                    </table>
+                    
+                </div>
+        </div>
+        <div class="item">
+           
+                <label for="txtalt">Digite altura</label>
+                
+                <input type="number" name="txtalt" id="txtalt" placeholder="Ex.:1.74m" >
+                <label for="txtalt">Digite peso</label>
+                
+                <input type="number" name="txtalt" id="txtpeso" placeholder="Ex.:74.3KG">
+            </p>
+               <input type="button" value="Calcular" onclick="calcular()" id="btn">
+        </div>
+        <div id="res">
+           <p id="resultado"></p>
+           <p id="respfoto"></p>
+
+        
+    </div>
+    
+    
+    </header>
+    <footer>
+       Pagina criada para aprimoramente do estudo de JavaScript
+    </footer>
+</body>
+</html>
